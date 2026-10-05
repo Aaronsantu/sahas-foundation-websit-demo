@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organization Details & Banking | Sahas Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 60px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .detail-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 32px;
+    }
+    .detail-card h3 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: #0f172a;
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px dashed #cbd5e1;
+      font-size: 0.98rem;
+    }
+    .info-row:last-child {
+      border-bottom: none;
+    }
+    .info-label {
+      color: #64748b;
+      font-weight: 500;
+    }
+    .info-val {
+      color: #0f172a;
+      font-weight: 600;
+      text-align: right;
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header -->
+  <header class="site">
+    <div class="wrap nav-row">
+      <a href="index.html#top" class="brand" aria-label="Sahas Foundation - Back to top">
+        <img src="images/logo.png" alt="Sahas Foundation Logo" style="height: 52px; width: auto; object-fit: contain; display: block;" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <nav class="links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="details.html">Organization Details</a>
+        <a href="index.html#contact" class="btn btn-primary">Support Mission</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow" style="color: #38bdf8;">Transparency & Compliance</div>
+      <h1 style="font-size: 2.5rem; margin: 12px 0;">Organization & Banking Details</h1>
+      <p style="font-size: 1.15rem; color: #94a3b8; max-width: 750px;">
+        Official trust credentials, statutory compliance, tax registration, and direct banking channels for Sahas Foundation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section style="padding: 60px 0; background: #ffffff;">
+    <div class="wrap">
+
+      <div class="trust-badge">
+        <span>✓</span> Registered Non-Profit Public Charitable Trust
+      </div>
+
+      <div class="details-grid">
+        
+        <!-- Trust & Statutory Info -->
+        <div class="detail-card">
+          <h3>Statutory Credentials</h3>
+          
+          <div class="info-row">
+            <span class="info-label">Official Name</span>
+            <span class="info-val">Sahas Foundation</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Entity Type</span>
+            <span class="info-val">Public Charitable Trust</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Governing Act</span>
+            <span class="info-val">Indian Trusts Act, 1882</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Registered Office</span>
+            <span class="info-val">Kakrola More, Dwarka, New Delhi</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Operating Regions</span>
+            <span class="info-val">Delhi-NCR, UP, Haryana, Pan-India</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Official Email</span>
+            <span class="info-val">sahasfoundation16@gmail.com</span>
+          </div>
+        </div>
+
+        <!-- Tax & Exemption Status -->
+        <div class="detail-card">
+          <h3>Tax & Exemptions</h3>
+          
+          <div class="info-row">
+            <span class="info-label">Section 12A Status</span>
+            <span class="info-val" style="color: #16a34a;">Approved</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Section 80G Status</span>
+            <span class="info-val" style="color: #16a34a;">Tax Deductible Exempt</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">FCRA Approval</span>
+            <span class="info-val" style="color: #16a34a;">Approved / Compliant</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Ni-Kshay Mitra Partner</span>
+            <span class="info-val">Registered (2023)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Donation Benefit</span>
+            <span class="info-val">50% Income Tax Exemption</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Receipt Issuance</span>
+            <span class="info-val">Issued via email upon verification</span>
+          </div>
+        </div>
+
+        <!-- Official Bank Details -->
+        <div class="detail-card" style="grid-column: 1 / -1; background: #f0f9ff; border-color: #bae6fd;">
+          <h3 style="border-bottom-color: #0284c7;">Direct Banking Channel</h3>
+          <p style="color: #334155; margin-bottom: 20px;">
+            For electronic wire transfers, RTGS, NEFT, or direct contributions, please use the verified trust account below:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div style="background: #ffffff; padding: 16px; border-radius: 6px; border: 1px solid #cbd5e1;">
+              <span style="font-size: 0.8rem; text-transform: uppercase; color: #64748b; font-weight: 700;">Account Name</span>
+              <p style="margin: 4px 0 0 0; font-weight: 700; color: #0f172a; font-size: 1.05rem;">Sahas Foundation</p>
+            </div>
+
+            <div style="background: #ffffff; padding: 16px; border-radius: 6px; border: 1px solid #cbd5e1;">
+              <span style="font-size: 0.8rem; text-transform: uppercase; color: #64748b; font-weight: 700;">Branch Location</span>
+              <p style="margin: 4px 0 0 0; font-weight: 700; color: #0f172a; font-size: 1.05rem;">Dwarka, New Delhi</p>
+            </div>
+
+            <div style="background: #ffffff; padding: 16px; border-radius: 6px; border: 1px solid #cbd5e1;">
+              <span style="font-size: 0.8rem; text-transform: uppercase; color: #64748b; font-weight: 700;">Official Support Email</span>
+              <p style="margin: 4px 0 0 0; font-weight: 700; color: #0f172a; font-size: 1.05rem;">sahasfoundation16@gmail.com</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; text-align: center;">
+            <a href="index.html#contact" class="btn btn-primary" style="padding: 12px 28px;">Contribute / Contact Us &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <a href="index.html#top">
+          <img src="images/logo.png" alt="Sahas Foundation Logo" style="height: 48px; width: auto; object-fit: contain; margin-bottom: 12px; filter: brightness(0) invert(1);" />
+        </a>
+        <p>A registered non-profit trust dedicated to providing aid, care, education, senior companionship, and disaster relief across India.</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="index.html#projects">Our Projects</a></p>
+        <p><a href="team.html">Our Team</a></p>
+        <p><a href="details.html">Organization Details</a></p>
+        <p><a href="index.html#contact">Contact & Support</a></p>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <p>Location: Kakrola More, Dwarka, New Delhi</p>
+        <p>Email: sahasfoundation16@gmail.com</p>
+        <p>Focus Areas: Delhi-NCR, UP, Haryana & Pan-India</p>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <div>&copy; 2026 Sahas Foundation. All rights reserved.</div>
+      <div>Clean Modern Cool-Tone Layout.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

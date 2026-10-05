@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahas Foundation | Spreading Aid Health And Smiles</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Full card clickable styling */
+    .proj-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
+    .proj-card-link:hover .proj-card {
+      border-color: #0284c7;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .proj-card {
+      transition: all 0.2s ease-in-out;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    /* Footer Logo Styling */
+    .footer-logo-badge {
+      display: inline-block;
+      background: #ffffff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .footer-logo-badge img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Support Mission Navigation Button */
+    .nav-btn-primary {
+      background-color: #0284c7 !important;
+      color: #ffffff !important;
+      padding: 10px 20px !important;
+      border-radius: 6px !important;
+      font-weight: 600 !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .nav-btn-primary:hover {
+      background-color: #0369a1 !important;
+      color: #ffffff !important;
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header -->
+  <header class="site">
+    <div class="wrap nav-row">
+      <!-- Clickable Logo Image -->
+      <a href="index.html#top" class="brand" aria-label="Sahas Foundation - Back to top">
+        <img src="images/logo.png" alt="Sahas Foundation Logo" style="height: 48px; width: auto; object-fit: contain; display: block;" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <nav class="links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="details.html">Organization Details</a>
+        <a href="#contact" class="nav-btn-primary">Support Mission</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Full-Width Custom Image Hero Banner -->
+  <section class="hero-banner" id="about">
+    <div class="hero-bg" style="background-image: url('images/front_banner.png');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="wrap hero-content">
+      <div class="hero-eyebrow">Spreading Aid Health And Smiles</div>
+      <h1>FOR A BETTER TOMORROW</h1>
+      
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" style="color: #ffffff !important;">Our Programs</a>
+        <a href="#contact" class="btn btn-line-light">Get Involved</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stat Strip Section -->
+  <section class="stat-section">
+    <div class="wrap">
+      <div class="stat-strip">
+        <div>
+          <div class="stat-num">12+</div>
+          <div class="stat-label">Years of Impact</div>
+        </div>
+        <div>
+          <div class="stat-num">50+</div>
+          <div class="stat-label">Community Centers</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Grassroots Focus</div>
+        </div>
+        <div>
+          <div class="stat-num">4 States</div>
+          <div class="stat-label">Active Presence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAHASIs & VISION Side-by-Side Section -->
+  <section id="initiatives" style="background: #ffffff; border-block: 1px solid var(--border-light); padding: 60px 0;">
+    <div class="wrap">
+      
+      <!-- 2-Column Grid Wrapper -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; align-items: start;">
+        
+        <!-- Column 1: SAHASIs -->
+        <div style="background: #f8fafc; border: 1px solid var(--border-light); border-top: 4px solid #0284c7; border-radius: 8px; padding: 32px;">
+          <div class="eyebrow" style="color: #0284c7;">Who We Are</div>
+          <h2 style="font-size: 2rem; margin: 8px 0;">SAHASIs</h2>
+          <p style="font-size: 1.1rem; font-weight: 600; color: #0284c7; margin-bottom: 20px; font-style: italic;">
+            *Making life a little easier*
+          </p>
+
+          <div style="background: #ffffff; border-left: 3px solid #0284c7; padding: 16px; border-radius: 4px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+            <p style="font-weight: 600; font-size: 0.95rem; color: #1e293b; margin-bottom: 4px;">Quoting Swami Vivekananda:</p>
+            <blockquote style="font-size: 0.95rem; color: #334155; font-style: italic; margin: 0; line-height: 1.5;">
+              “If you want to find God, serve man. To reach Narayana you must serve the Daridra Narayanas – the starving millions of India…”
+            </blockquote>
+          </div>
+
+          <p style="font-size: 0.98rem; line-height: 1.65; color: #334155; margin-bottom: 14px;">
+            We at SAHAS, the SAHASIs are doing our bit towards providing aid through necessary resources like education, care and support to the needy and underprivileged school kids; provide companionship to lonely elders as well as extend our hand to any specific need of the hour.
+          </p>
+
+          <p style="font-size: 0.98rem; line-height: 1.65; color: #334155; margin-bottom: 14px;">
+            All those Young at heart, with social consciousness, can contribute in whichever capacity they wish, by being associated with the SAHASIs.
+          </p>
+
+          <p style="font-size: 0.98rem; line-height: 1.65; color: #334155; margin: 0;">
+            Our aim is to rouse the Indians to an awareness of their obligations and responsibilities to the nation and through the nation to humanity at large.
+          </p>
+        </div>
+
+        <!-- Column 2: VISION -->
+        <div style="background: #f8fafc; border: 1px solid var(--border-light); border-top: 4px solid #0284c7; border-radius: 8px; padding: 32px;">
+          <div class="eyebrow" style="color: #0284c7;">Our Purpose</div>
+          <h2 style="font-size: 2rem; margin: 8px 0 20px 0;">VISION</h2>
+
+          <p style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin-bottom: 16px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+            To Provide:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            
+            <div style="background: #ffffff; padding: 18px; border-radius: 6px; border-left: 3px solid #0284c7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+              <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: #0284c7; display: block; margin-bottom: 4px;">Underprivileged Children</span>
+              <p style="margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.5;">
+                A secure, happy, healthy childhood to the country’s underprivileged children.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; padding: 18px; border-radius: 6px; border-left: 3px solid #0284c7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+              <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: #0284c7; display: block; margin-bottom: 4px;">Senior Citizens</span>
+              <p style="margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.5;">
+                An interesting and cheerful existence to lonely seniors.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; padding: 18px; border-radius: 6px; border-left: 3px solid #0284c7; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+              <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: #0284c7; display: block; margin-bottom: 4px;">Nationwide Aid</span>
+              <p style="margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.5;">
+                Extending a hand for any need or during any calamity in the nation without restriction.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" style="background: #f8fafc; border-bottom: 1px solid var(--border-light); padding: 60px 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Grassroots Action</div>
+        <h2>Our Active Projects</h2>
+        <p class="tagline">Time-bound campaigns, special drives, and field operations delivered directly across communities.</p>
+      </div>
+
+      <div class="proj-grid">
+        <!-- 1. Nikshay Poshan Project -->
+        <a href="Nishkay.html" class="proj-card-link">
+          <div class="proj-card">
+            <div>
+              <span class="proj-tag">Nutrition & Care</span>
+              <h3>Nikshay Poshan Project</h3>
+              <p>Providing direct nutritional support and holistic health counseling to TB patients across underserved communities.</p>
+            </div>
+            <div class="proj-card-actions">
+              <span class="more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. Cycle Project -->
+        <a href="project_cycle.html" class="proj-card-link">
+          <div class="proj-card">
+            <div>
+              <span class="proj-tag">Mobility & Education</span>
+              <h3>Cycle Project - Hope for Education</h3>
+              <p>Distributing bicycles to young girls in rural areas to reduce school dropout rates caused by lack of transportation.</p>
+            </div>
+            <div class="proj-card-actions">
+              <span class="more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. Child Sponsorship -->
+        <a href="child_sponsor.html" class="proj-card-link">
+          <div class="proj-card">
+            <div>
+              <span class="proj-tag">Sponsorship</span>
+              <h3>Child Sponsorship</h3>
+              <p>Supporting underprivileged children with monthly educational grants, school supplies, and personal mentorship.</p>
+            </div>
+            <div class="proj-card-actions">
+              <span class="more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4. 3E Project -->
+        <a href="project_3e.html" class="proj-card-link">
+          <div class="proj-card">
+            <div>
+              <span class="proj-tag">Youth Growth</span>
+              <h3>3E - Educate, Encourage, Elevate</h3>
+              <p>Interactive practical learning and skill development initiatives to build confidence and leadership among adolescents.</p>
+            </div>
+            <div class="proj-card-actions">
+              <span class="more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5. Health Project -->
+        <a href="health.html" class="proj-card-link">
+          <div class="proj-card">
+            <div>
+              <span class="proj-tag">Healthcare Access</span>
+              <h3>Health</h3>
+              <p>Conducting medical check-up camps, blood pressure screenings, and hygiene awareness drives for senior citizens and families.</p>
+            </div>
+            <div class="proj-card-actions">
+              <span class="more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom: 24px;">
+        <div class="eyebrow">People Behind Sahas</div>
+        <h2>Leadership & Community Facilitators</h2>
+        <p class="tagline" style="max-width: 600px;">
+          Our team comprises passionate social workers, community mentors, and volunteers working directly at the grassroots level.
+        </p>
+      </div>
+
+      <!-- Button Block -->
+      <div style="margin-top: 24px;">
+        <a href="team.html" class="btn btn-primary" style="padding: 12px 32px; font-size: 15px; display: inline-block; color: #ffffff !important;">
+          VIEW OUR TEAM &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navy Vision Accent Section -->
+  <section class="navy" id="vision">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Our Core Vision</div>
+        <h2>VISION — To Provide:</h2>
+      </div>
+
+      <div class="vision-list">
+        <div class="row">
+          <div class="label" style="color: #38bdf8; font-weight: 700;">Underprivileged Children</div>
+          <p>A secure, happy, healthy childhood to the country’s underprivileged children.</p>
+        </div>
+        <div class="row">
+          <div class="label" style="color: #38bdf8; font-weight: 700;">Senior Citizens</div>
+          <p>An interesting and cheerful existence to lonely seniors.</p>
+        </div>
+        <div class="row">
+          <div class="label" style="color: #38bdf8; font-weight: 700;">Nationwide Aid</div>
+          <p>Extending a hand for any need or during any calamity in the nation without restriction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog / Perspectives Section -->
+  <section id="blog">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom: 24px;">
+        <div class="eyebrow">Field Notes</div>
+        <h2>Perspectives & Stories</h2>
+        <p class="tagline">Read insights, field updates, and commentary from our mentors and volunteers on the frontlines.</p>
+      </div>
+
+      <div style="margin-top: 24px;">
+        <a href="blog.html" class="btn btn-primary" style="color: #ffffff !important;">VIEW ALL BLOG STORIES &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Donation Section -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Support Our Cause</div>
+        <h2>Partner with Sahas Foundation</h2>
+        <p class="tagline">Your contribution helps us expand our field centers, train more mentors, and reach more underprivileged individuals.</p>
+      </div>
+
+      <div class="donate-grid">
+        <!-- Passbook Box -->
+        <div class="passbook">
+          <div class="eyebrow" style="color: var(--accent-sky);">Direct Trust Banking</div>
+          <h3>Bank Transfer Details</h3>
+          
+          <div class="row">
+            <span class="k">Account Name:</span>
+            <span class="v">Sahas Foundation</span>
+          </div>
+          <div class="row">
+            <span class="k">Location:</span>
+            <span class="v">Kakrola More, Dwarka, New Delhi</span>
+          </div>
+          <div class="row">
+            <span class="k">Registration:</span>
+            <span class="v">Indian Trusts Act, 1882</span>
+          </div>
+          <div class="row">
+            <span class="k">Tax Exemptions:</span>
+            <span class="v">12A, 80G & FCRA Approved</span>
+          </div>
+          <div class="row">
+            <span class="k">Official Email:</span>
+            <span class="v">sahasfoundation16@gmail.com</span>
+          </div>
+
+          <button class="copy-btn" onclick="copyDetails()">Copy Bank & Trust Details</button>
+          <div class="passbook-note">*Donations are tax-deductible under Section 80G of the Income Tax Act. Receipts sent via email upon confirmation.</div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact" onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you shortly.');">
+          <div class="field-row">
+            <div>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Jane" required />
+            </div>
+            <div>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com" required />
+          </div>
+
+          <div>
+            <label for="subject">How Would You Like to Help?</label>
+            <select id="subject">
+              <option>Individual Donation</option>
+              <option>CSR Partnership</option>
+              <option>Volunteer / Mentorship</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us how you'd like to collaborate..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; color: #ffffff !important;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <a href="index.html#top" class="footer-logo-badge">
+          <img src="images/logo.png" alt="Sahas Foundation Logo" />
+        </a>
+        <p>A registered non-profit trust dedicated to providing aid, care, education, senior companionship, and disaster relief across India.</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <p><a href="index.html#top">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="#initiatives">Our Initiatives</a></p>
+        <p><a href="#projects">Our Projects</a></p>
+        <p><a href="team.html">Our Team</a></p>
+        <p><a href="details.html">Organization Details</a></p>
+        <p><a href="#contact">Contact & Support</a></p>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <p>Location: Kakrola More, Dwarka, New Delhi</p>
+        <p>Email: sahasfoundation16@gmail.com</p>
+        <p>Focus Areas: Delhi-NCR, UP, Haryana & Pan-India</p>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <div>&copy; 2026 Sahas Foundation. All rights reserved.</div>
+      <div>Clean Modern Cool-Tone Layout.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

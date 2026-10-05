@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perspectives & Blog | Sahas Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .blog-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .blog-post-card {
+      display: flex;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .blog-post-card:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .blog-post-img {
+      width: 38%;
+      min-width: 280px;
+      background-color: #f1f5f9;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: block;
+    }
+
+    .blog-post-content {
+      width: 62%;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .blog-meta-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .blog-author-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+    }
+
+    .author-details {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.3;
+    }
+
+    .author-details .username {
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .blog-post-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0284c7;
+      margin-bottom: 10px;
+      line-height: 1.3;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .blog-post-title:hover {
+      color: #0369a1;
+      text-decoration: underline;
+    }
+
+    .blog-post-snippet {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .blog-meta-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 14px;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .stats-left {
+      display: flex;
+      gap: 16px;
+    }
+
+    .like-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #64748b;
+      padding: 0;
+      transition: color 0.2s ease;
+    }
+
+    .like-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: #64748b;
+      fill: none;
+      transition: all 0.2s ease;
+    }
+
+    .like-btn.liked {
+      color: #ef4444;
+    }
+
+    .like-btn.liked svg {
+      stroke: #ef4444;
+      fill: #ef4444;
+    }
+
+    @media (max-width: 768px) {
+      .blog-post-card {
+        flex-direction: column;
+      }
+      .blog-post-img {
+        width: 100%;
+        height: 200px;
+      }
+      .blog-post-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header -->
+  <header class="site">
+    <div class="wrap nav-row">
+      <a href="index.html" class="brand">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="6" fill="#0284c7"/>
+          <path d="M12 28L20 12L28 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 22H24" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-word">
+          <b>SAHAS</b>
+          <span>FOUNDATION</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <nav class="links" id="navLinks">
+        <a href="about.html">About</a>
+        <a href="index.html#initiatives">Initiatives</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="team.html">Our Team</a>
+        <a href="blog.html" class="active">Perspectives</a>
+        <a href="index.html#contact" class="btn btn-primary">Support Mission</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: #ffffff; padding: 48px 0 24px; border-bottom: 1px solid #e2e8f0;">
+    <div class="wrap">
+      <div class="eyebrow" style="color: #0284c7; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Field Notes & Stories</div>
+      <h1 style="margin: 0; font-size: 36px; color: #0f172a; font-weight: 800;">SAHAS Perspectives</h1>
+      <p class="tagline" style="margin-top: 8px; max-width: 640px; color: #475569; font-size: 16px; line-height: 1.5;">
+        Read about our grassroots interventions, field campaigns, and community impact reports.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Feed List -->
+  <div class="blog-container">
+
+    <!-- Post 1 -->
+    <article class="blog-post-card">
+      <a href="health-hygiene-camp.html" class="blog-post-img" style="background-image: url('images/HH.png');"></a>
+      <div class="blog-post-content">
+        <div>
+          <div class="blog-meta-top">
+            <div class="blog-author-info">
+              <div class="avatar-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+              <div class="author-details">
+                <div class="username">sahasfoundationmum</div>
+                <div>Jul 28 · 1 min read</div>
+              </div>
+            </div>
+          </div>
+          <a href="health-hygiene-camp.html" class="blog-post-title">Health & Hygiene Camp - Tribal Women, Panvel</a>
+          <p class="blog-post-snippet">Madhuban Agro Farms, 2nd July 2026 in Pimpalwadi, Dhodhani, Panvel, SAHAS organized a targeted healthcare and hygiene camp for the Katkari and Thakar tribal communities...</p>
+        </div>
+        <div class="blog-meta-bottom">
+          <div class="stats-left">
+            <span>5 views</span>
+            <span>0 comments</span>
+          </div>
+          <button class="like-btn" onclick="toggleLike(this, 0)">
+            <span class="like-count">0</span>
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Post 2 -->
+    <article class="blog-post-card">
+      <a href="madhuban-farms.html" class="blog-post-img" style="background-image: url('images/july02.png');"></a>
+      <div class="blog-post-content">
+        <div>
+          <div class="blog-meta-top">
+            <div class="blog-author-info">
+              <div class="avatar-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+              <div class="author-details">
+                <div class="username">sahasfoundationmum</div>
+                <div>Jul 21, 2026 · 1 min read</div>
+              </div>
+            </div>
+          </div>
+          <a href="madhuban-farms.html" class="blog-post-title">July 02, 2026 – Madhuban Farms</a>
+          <p class="blog-post-snippet">SAHAS held a health awareness camp for tribal children of Katkari and Thakar communities at Madhuban Agro Farms, Pimpalwadi, Dhodhani, Panvel...</p>
+        </div>
+        <div class="blog-meta-bottom">
+          <div class="stats-left">
+            <span>0 views</span>
+            <span>0 comments</span>
+          </div>
+          <button class="like-btn" onclick="toggleLike(this, 0)">
+            <span class="like-count">0</span>
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Post 3 -->
+    <article class="blog-post-card">
+      <a href="foundation-day-2026.html" class="blog-post-img" style="background-image: url('images/foundation.png');"></a>
+      <div class="blog-post-content">
+        <div>
+          <div class="blog-meta-top">
+            <div class="blog-author-info">
+              <div class="avatar-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+              <div class="author-details">
+                <div class="username">sahasfoundationmum</div>
+                <div>Jul 21, 2026 · 1 min read</div>
+              </div>
+            </div>
+          </div>
+          <a href="foundation-day-2026.html" class="blog-post-title">Foundation Day - 2026</a>
+          <p class="blog-post-snippet">SAHAS decided to advance her annual day celebrations to May 27, 2026, because the heat was killing and homeless children needed whatever help they could get...</p>
+        </div>
+        <div class="blog-meta-bottom">
+          <div class="stats-left">
+            <span>1 view</span>
+            <span>0 comments</span>
+          </div>
+          <button class="like-btn" onclick="toggleLike(this, 0)">
+            <span class="like-count">0</span>
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Post 4 -->
+    <article class="blog-post-card">
+      <a href="nanhi-pari-foundation.html" class="blog-post-img" style="background-image: url('images/nanhi.png');"></a>
+      <div class="blog-post-content">
+        <div>
+          <div class="blog-meta-top">
+            <div class="blog-author-info">
+              <div class="avatar-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+              <div class="author-details">
+                <div class="username">sahasfoundationmum</div>
+                <div>Jun 13, 2023 · 1 min read</div>
+              </div>
+            </div>
+          </div>
+          <a href="nanhi-pari-foundation.html" class="blog-post-title">Nanhi Pari Foundation</a>
+          <p class="blog-post-snippet">In February 2021 we helped India's most vulnerable girl children. Learning about 4-month-old Ansika suffering from Down's Syndrome with...</p>
+        </div>
+        <div class="blog-meta-bottom">
+          <div class="stats-left">
+            <span>4 views</span>
+            <span>0 comments</span>
+          </div>
+          <button class="like-btn" onclick="toggleLike(this, 2)">
+            <span class="like-count">2</span>
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Post 5 -->
+    <article class="blog-post-card">
+      <a href="dharavi-art-room.html" class="blog-post-img" style="background-image: url('images/artroom.png');"></a>
+      <div class="blog-post-content">
+        <div>
+          <div class="blog-meta-top">
+            <div class="blog-author-info">
+              <div class="avatar-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+              <div class="author-details">
+                <div class="username">sahasfoundationmum</div>
+                <div>Jun 13, 2023 · 1 min read</div>
+              </div>
+            </div>
+          </div>
+          <a href="dharavi-art-room.html" class="blog-post-title">Dharavi Art Room – A Safe, Colourful Space Where Children Come to Draw, Paint, & Explore</a>
+          <p class="blog-post-snippet">Art is an avenue for the children to express themselves. Also, at the same time bring them into the mainstream living which should be the...</p>
+        </div>
+        <div class="blog-meta-bottom">
+          <div class="stats-left">
+            <span>12 views</span>
+            <span>0 comments</span>
+          </div>
+          <button class="like-btn" onclick="toggleLike(this, 2)">
+            <span class="like-count">2</span>
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <div class="brand-word" style="margin-bottom: 12px;">
+          <b style="color: #fff; font-size: 20px;">SAHAS</b>
+          <span style="color: #38bdf8;">FOUNDATION</span>
+        </div>
+        <p>A registered non-profit trust dedicated to gender equality, human rights awareness, and empowering adolescents across India.</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="index.html#initiatives">Our Initiatives</a></p>
+        <p><a href="index.html#projects">Our Projects</a></p>
+        <p><a href="team.html">Our Team</a></p>
+        <p><a href="blog.html">Perspectives</a></p>
+        <p><a href="index.html#contact">Contact & Support</a></p>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <p>Location: Kakrola More, Dwarka, New Delhi</p>
+        <p>Email: sahasfoundation16@gmail.com</p>
+        <p>Focus Areas: Delhi-NCR, UP, Haryana & Pan-India</p>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <div>&copy; 2026 Sahas Foundation. All rights reserved.</div>
+      <div>Clean Modern Cool-Tone Layout.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleLike(btn, initialCount) {
+      const countSpan = btn.querySelector('.like-count');
+      let currentCount = parseInt(countSpan.textContent, 10);
+      
+      if (btn.classList.contains('liked')) {
+        btn.classList.remove('liked');
+        countSpan.textContent = currentCount - 1;
+      } else {
+        btn.classList.add('liked');
+        countSpan.textContent = currentCount + 1;
+      }
+    }
+  </script>
+</body>
+</html>

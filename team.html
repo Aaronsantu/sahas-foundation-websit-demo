@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team & Committee Members | Sahas Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .team-page-header {
+      background: var(--bg-navy);
+      color: #ffffff;
+      padding-block: 60px 40px;
+      border-bottom: 1px solid var(--border-navy);
+    }
+    .team-page-header h1 {
+      color: #ffffff;
+      font-size: clamp(30px, 4vw, 44px);
+    }
+    .committee-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-block: 40px 80px;
+    }
+    @media (max-width: 768px) {
+      .committee-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .member-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      transition: border-color 0.15s;
+    }
+    .member-card:hover {
+      border-color: var(--accent-blue);
+    }
+    .member-card h3 {
+      font-size: 20px;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .member-card p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site">
+    <div class="wrap nav-row">
+      <a href="index.html" class="brand">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="6" fill="#0284c7"/>
+          <path d="M12 28L20 12L28 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 22H24" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-word">
+          <b>SAHAS</b>
+          <span>FOUNDATION</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <nav class="links" id="navLinks">
+        <a href="about.html">About</a>
+        <a href="index.html#initiatives">Initiatives</a>
+        <a href="team.html" style="color: var(--accent-blue);">Our Team</a>
+        <a href="index.html#blog">Perspectives</a>
+        <a href="index.html#contact" class="btn btn-primary">Support Mission</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="team-page-header">
+    <div class="wrap">
+      <div class="eyebrow" style="color: var(--accent-sky);">People Behind Sahas</div>
+      <h1>Committee Members</h1>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="wrap">
+    <div style="margin-top: 40px;">
+      <h2 style="font-size: 24px; color: var(--accent-blue);">Our Current Members</h2>
+    </div>
+
+    <div class="committee-grid">
+      <!-- Member 1 -->
+      <div class="member-card">
+        <h3>Mr. Surendra Chavhan</h3>
+        <p>
+          AMFI certificate holder, has his own investment firm and is into consultancy for 12+ years. Since last few years, involved with social work also.
+        </p>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="member-card">
+        <h3>Mr. Debjit Kar</h3>
+        <p>
+          MBA with a successful marketing career for last 20+ years. Despite killing work schedule, feels responsible and thinks we must give something in return to society.
+        </p>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="member-card">
+        <h3>Mrs. Shakuntala Gandhi</h3>
+        <p>
+          Homemaker & social worker since the last 30+ years.
+        </p>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="member-card">
+        <h3>Mrs. Usha Sundaram</h3>
+        <p>
+          Retired bank employee, much involved with various charity projects for last 25+ years.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <div class="brand-word" style="margin-bottom: 12px;">
+          <b style="color: #fff; font-size: 20px;">SAHAS</b>
+          <span style="color: #38bdf8;">FOUNDATION</span>
+        </div>
+        <p>A registered non-profit trust dedicated to gender equality, human rights awareness, and empowering adolescents across India.</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="index.html#initiatives">Our Initiatives</a></p>
+        <p><a href="team.html">Our Team</a></p>
+        <p><a href="index.html#contact">Contact & Support</a></p>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <p>Location: Kakrola More, Dwarka, New Delhi</p>
+        <p>Email: sahasfoundation16@gmail.com</p>
+        <p>Focus Areas: Delhi-NCR, UP, Haryana & Pan-India</p>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <div>&copy; 2026 Sahas Foundation. All rights reserved.</div>
+      <div>Clean Modern Cool-Tone Layout.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
