@@ -363,7 +363,7 @@
           </div>
           <div class="row">
             <span class="k">Location:</span>
-            <span class="v">Kakrola More, Dwarka, New Delhi</span>
+            <span class="v">Kalpataru Sparkle, B 144, Gandhi Nagar, Bandra East, Mumbai, Maharashtra 400051</span>
           </div>
           <div class="row">
             <span class="k">Registration:</span>
@@ -382,27 +382,29 @@
           <div class="passbook-note">*Donations are tax-deductible under Section 80G of the Income Tax Act. Receipts sent via email upon confirmation.</div>
         </div>
 
-        <!-- Contact Form -->
-        <form class="contact" onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you shortly.');">
+        <!-- Contact Form (Direct to Email) -->
+        <form action="https://formsubmit.co/sahasfoundation16@gmail.com" method="POST" class="contact">
+          <input type="hidden" name="_captcha" value="false" />
+          
           <div class="field-row">
             <div>
               <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Jane" required />
+              <input type="text" id="fname" name="First Name" placeholder="Jane" required />
             </div>
             <div>
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Doe" required />
+              <input type="text" id="lname" name="Last Name" placeholder="Doe" required />
             </div>
           </div>
 
           <div>
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="jane@example.com" required />
+            <input type="email" id="email" name="Email" placeholder="jane@example.com" required />
           </div>
 
           <div>
             <label for="subject">How Would You Like to Help?</label>
-            <select id="subject">
+            <select id="subject" name="Inquiry Type">
               <option>Individual Donation</option>
               <option>CSR Partnership</option>
               <option>Volunteer / Mentorship</option>
@@ -412,7 +414,7 @@
 
           <div>
             <label for="message">Message</label>
-            <textarea id="message" placeholder="Tell us how you'd like to collaborate..."></textarea>
+            <textarea id="message" name="Message" placeholder="Tell us how you'd like to collaborate..." required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%; color: #ffffff !important;">Send Message</button>
@@ -442,9 +444,9 @@
       </div>
       <div>
         <h4>Contact Info</h4>
-        <p>Location: Kakrola More, Dwarka, New Delhi</p>
+        <p>Location: Kalpataru Sparkle, B 144, Gandhi Nagar, Bandra East, Mumbai, Maharashtra 400051</p>
         <p>Email: sahasfoundation16@gmail.com</p>
-        <p>Focus Areas: Delhi-NCR, UP, Haryana & Pan-India</p>
+        <p>Focus Areas: Mumbai, Delhi-NCR & Pan-India</p>
       </div>
     </div>
     <div class="wrap foot-bottom">
